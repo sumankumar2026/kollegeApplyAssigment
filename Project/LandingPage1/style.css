@@ -1,0 +1,324 @@
+/* GLOBAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: #fff;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1976d2;
+}
+
+.nav-links a {
+    margin-left: 18px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #1976d2;
+    border-bottom: 2px solid #1976d2;
+}
+
+.switch-btn {
+    background: #1976d2;
+    color: #fff !important;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.switch-btn:hover {
+    background: #0d47a1;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        padding: 20px;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        border-radius: 10px;
+    }
+
+    .nav-links a {
+        margin: 12px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* HEADER */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #c62828;
+    font-size: 30px;
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin: 10px auto 25px;
+    max-width: 700px;
+    animation: fadeText 3s infinite alternate ease-in-out;
+}
+
+@keyframes fadeText {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* SECTIONS */
+.section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* COURSE LIST */
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-item {
+    padding: 12px;
+    background: #f0f4ff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 5px solid #1976d2;
+    transition: 0.3s;
+}
+
+.course-item:hover {
+    transform: translateX(10px);
+    background: #e3f2fd;
+}
+
+/* FEES GRID */
+.fees-box {
+    text-align: center;
+}
+
+.fees-subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.fees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.fees-card {
+    background: #f5f7fa;
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 6px solid #1976d2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.fees-card:hover {
+    transform: translateY(-6px);
+    background: #e8f2ff;
+}
+
+.price-range {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1976d2;
+}
+
+/* FEES BUTTON */
+.fees-btn {
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #1976d2;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.fees-btn:hover {
+    background: #0d47a1;
+    transform: translateY(-3px);
+}
+
+/* INFO LIST */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    background: #f5f7fa;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border-left: 6px solid #d32f2f;
+}
+
+/* FORMS */
+.apply-form {
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    background: #fafafa;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #1976d2;
+    background: #fff;
+}
+
+/* CHECKBOX */
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+/* SUBMIT BUTTON */
+.apply-form button {
+    width: 100%;
+    background: #1976d2;
+    padding: 14px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.apply-form button:hover {
+    background: #0d47a1;
+}
+
+/* MODAL */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.modal-box {
+    background: white;
+    width: 90%;
+    max-width: 360px;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    animation: fadeUp 0.4s ease;
+}
+
+#closeModal {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+}
+
+#feesData li {
+    background: #f5f7fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 5px solid #1976d2;
+}
+
+/* ANIMATIONS */
+.fade-up {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp 0.7s forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+.delay-6 { animation-delay: 1.2s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

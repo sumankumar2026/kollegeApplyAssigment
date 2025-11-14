@@ -1,0 +1,9 @@
+{
+  "university": "Chandigarh University",
+  "courses": [
+    { "course": "B.Tech AI & ML", "fee_range": "₹1.2L - ₹2L per year" },
+    { "course": "B.Sc Data Science", "fee_range": "₹95k - ₹1.5L per year" },
+    { "course": "MBA", "fee_range": "₹1.7L - ₹2.3L per year" },
+    { "course": "Pharmacy", "fee_range": "₹1.1L - ₹1.8L per year" }
+  ]
+}

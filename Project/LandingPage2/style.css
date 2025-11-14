@@ -1,0 +1,245 @@
+/* BASIC PAGE */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    padding: 20px;
+    margin: 0;
+}
+
+/* NAV BUTTON */
+.nav-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #1976d2;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+.nav-btn:hover {
+    background: #0d47a1;
+    transform: translateY(-3px);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-top: 40px;
+}
+.hero h1 {
+    font-size: 32px;
+    color: #c62828;
+    margin-bottom: 10px;
+}
+.hero-text {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    animation: fadeText 3s infinite alternate ease-in-out;
+}
+@keyframes fadeText {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* SECTIONS */
+.section {
+    margin-top: 35px;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* INFO LIST */
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.info-list li {
+    background: #fff;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 5px solid #1976d2;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: 0.2s;
+}
+.info-list li:hover {
+    transform: translateX(8px);
+    background: #e3f2fd;
+}
+
+/* SPECIAL BOXES */
+.placement-box { border-left: 6px solid #d32f2f; }
+.facility-box { border-left: 6px solid #388e3c; }
+
+/* FORM */
+.apply-form {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-top: 35px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+.form-group input, .form-group select {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    transition: 0.3s;
+}
+.form-group input:focus, .form-group select:focus {
+    border-color: #1976d2;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(25,118,210,0.4);
+    transform: translateY(-2px);
+}
+
+/* CHECKBOX */
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* SUBMIT BUTTON */
+.apply-form button {
+    width: 100%;
+    background: #1976d2;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.apply-form button:hover {
+    background: #0d47a1;
+}
+
+/* MODAL */
+#modal {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.modal-box {
+    background: white;
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 120px auto;
+    position: relative;
+    animation: fade-up 0.4s ease-in-out;
+}
+#closeModal {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ANIMATIONS */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.7s forwards;
+}
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+.delay-6 { animation-delay: 1.2s; }
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* CU FEES SECTION BOX */
+.cu-fees-box {
+    text-align: center;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+}
+
+/* Subtitle */
+.cu-fees-box .fees-subtitle {
+    color: #555;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* GRID */
+.fees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+/* CU CARDS */
+.cu-card {
+    background: #fef5f5;
+    padding: 20px;
+    border-radius: 14px;
+    border-left: 6px solid #b71c1c; /* CU maroon */
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: 0.25s;
+}
+
+.cu-card:hover {
+    transform: translateY(-6px);
+    background: #fdeaea;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+/* Price text */
+.cu-card .price-range {
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    color: #b71c1c;
+}
+
+/* CU BUTTON */
+.cu-fees-btn {
+    background: #b71c1c;
+    padding: 12px 24px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transition: 0.3s;
+}
+
+.cu-fees-btn:hover {
+    background: #7f0000;
+    transform: translateY(-3px);
+}

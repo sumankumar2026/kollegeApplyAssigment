@@ -1,0 +1,16 @@
+{
+  "university": {
+    "name": "Sample University",
+    "location": "Delhi",
+    "departments": [
+      {
+        "name": "Engineering",
+        "courses": ["CSE", "ECE", "ME"]
+      },
+      {
+        "name": "Management",
+        "courses": ["MBA", "BBA"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "university": "Lovely Professional University",
+  "courses": [
+    { "course": "B.Tech CSE", "fee_range": "₹1.6L - ₹2L per year" },
+    { "course": "MBA", "fee_range": "₹2L - ₹2.6L per year" },
+    { "course": "BBA", "fee_range": "₹90k - ₹1.4L per year" },
+    { "course": "Hotel Management", "fee_range": "₹1L - ₹1.6L per year" }
+  ]
+}

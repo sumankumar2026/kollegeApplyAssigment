@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chandigarh University - Admissions 2025</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV BUTTON TO LPU PAGE -->
+    <a href="../LandingPage1/lpu.html" class="nav-btn">Go to LPU Page</a>
+
+    <!-- HERO -->
+    <div class="hero fade-up">
+        <h1>Chandigarh University (CU)</h1>
+        <p class="hero-text">NAAC A+ accredited university offering global exposure, top recruiters, modern campus & over 150+ programs.</p>
+    </div>
+
+    <!-- OVERVIEW SECTION -->
+    <div class="section fade-up delay-1">
+        <h2>University Overview</h2>
+        <p class="overview">
+            Chandigarh University is one of India’s fastest growing universities known for innovation, industry tie-ups, 
+            global partnerships, excellent placements and modern campus facilities. Over 900+ companies visit every year.
+        </p>
+    </div>
+
+    <!-- COURSES SECTION -->
+    <div class="section fade-up delay-2">
+        <h2>Popular Courses</h2>
+        <ul class="info-list">
+            <li>💻 B.Tech CSE</li>
+            <li>🤖 B.Tech AI & ML</li>
+            <li>🧪 B.Sc Biotechnology</li>
+            <li>💼 MBA</li>
+            <li>📊 BBA</li>
+        </ul>
+    </div>
+
+     <!-- FEES STRUCTURE (CU VERSION) -->
+<div class="section fade-up delay-3 cu-fees-box">
+
+    <h2>Fees Structure</h2>
+    <p class="fees-subtitle">Explore detailed fee information for CU programs.</p>
+
+    <div class="fees-grid">
+
+        <!-- UG FEES CARD -->
+        <div class="fees-card cu-card">
+            <h3>🎓 UG Programs</h3>
+            <p>B.Tech, BBA, BCA, B.Sc, B.Com</p>
+            <span class="price-range">₹90,000 – ₹2,00,000 / year</span>
+        </div>
+
+        <!-- PG FEES CARD -->
+        <div class="fees-card cu-card">
+            <h3>📘 PG Programs</h3>
+            <p>MBA, M.Tech, M.Sc, MCA</p>
+            <span class="price-range">₹1,10,000 – ₹2,50,000 / year</span>
+        </div>
+
+        <!-- HOSTEL FEES CARD -->
+        <div class="fees-card cu-card">
+            <h3>🏨 Hostel Fees</h3>
+            <p>AC / Non-AC Rooms</p>
+            <span class="price-range">₹80,000 – ₹1,50,000 / year</span>
+        </div>
+
+    </div>
+
+    <button id="openModal" class="cu-fees-btn">Check Detailed Course-wise Fees</button>
+
+</div>
+
+    <!-- PLACEMENT SECTION -->
+    <div class="section fade-up delay-4 placement-box">
+        <h2>Placement Highlights</h2>
+        <ul class="info-list">
+            <li>💰 Highest Package: ₹54 LPA</li>
+            <li>📈 Average Package: ₹7.2 LPA</li>
+            <li>🏢 900+ Recruiters</li>
+            <li>🌍 Top Recruiters: Amazon, Deloitte, IBM, Google, Infosys</li>
+        </ul>
+    </div>
+
+    <!-- FACILITY SECTION -->
+    <div class="section fade-up delay-5 facility-box">
+        <h2>Campus Facilities</h2>
+        <ul class="info-list">
+            <li>🏩 Fully furnished hostels</li>
+            <li>⚽ Sports stadium & gym</li>
+            <li>🔬 Research labs & incubation centers</li>
+            <li>📚 24x7 library</li>
+            <li>🚍 Transport & cafeteria</li>
+        </ul>
+    </div>
+
+    <!-- APPLICATION FORM -->
+    <h2 class="fade-up delay-6">Apply Now</h2>
+
+    <form id="leadForm" class="apply-form">
+
+        <div class="form-group fade-field df1">
+            <label>Full Name</label>
+            <input id="name" type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group fade-field df2">
+            <label>Email</label>
+            <input id="email" type="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="form-group fade-field df3">
+            <label>Phone Number</label>
+            <input id="phone" type="text" placeholder="10-digit mobile number"
+                   maxlength="10" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group fade-field df4">
+            <label>State</label>
+            <select id="state" required>
+                <option value="">Select State</option>
+                <option>Bihar</option>
+                <option>Punjab</option>
+                <option>Haryana</option>
+                <option>UP</option>
+                <option>Delhi</option>
+            </select>
+        </div>
+
+        <div class="form-group fade-field df5">
+            <label>Course Interested</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option>B.Tech CSE</option>
+                <option>BBA</option>
+                <option>MBA</option>
+                <option>BCA</option>
+            </select>
+        </div>
+
+        <div class="form-group fade-field df6">
+            <label>Intake Year</label>
+            <input id="intake" type="date" required>
+        </div>
+
+        <label class="checkbox-row fade-field df7">
+            <input type="checkbox" id="consent" required>
+            I agree to terms
+        </label>
+
+        <button type="submit" class="fade-field df8">Submit Application</button>
+    </form>
+
+    <!-- FEES MODAL -->
+    <div id="modal" style="display:none;">
+        <div class="modal-box">
+            <span id="closeModal">X</span>
+            <h3>CU Course Fees</h3>
+            <div id="feesData"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
